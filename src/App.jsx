@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AIChatbot from "./components/AIChatbot/AIChatbot";
 import Navbar from "./components/navbar/navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
@@ -20,6 +21,7 @@ function App() {
         <>
           <div className="app">
             <Navbar setShowLogin={setShowLogin} />
+
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/order" element={<PlaceOrder />} />
@@ -28,7 +30,10 @@ function App() {
               <Route path="/myorders" element={<MyOrders />} />
             </Routes>
           </div>
+
           <Footer />
+
+          <AIChatbot />
         </>
       )}
     </>

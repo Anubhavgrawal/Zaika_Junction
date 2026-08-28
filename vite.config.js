@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Zaika_Junction/',
+  base: '/Zaika_Junction/',   // repo name with leading and trailing slash
+  build: {
+    outDir: 'docs',                 // keep docs if you want
+  },
 })

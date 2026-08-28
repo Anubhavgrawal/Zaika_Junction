@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import StoreContextProvider from "./Context/storeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Zaika_Junction">
     <StoreContextProvider>
       <App />
     </StoreContextProvider>
